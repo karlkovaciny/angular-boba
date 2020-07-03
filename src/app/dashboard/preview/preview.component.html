@@ -1,0 +1,13 @@
+<div class="component-marker">
+    PreviewComponent
+  </div>
+<br>
+  <ul class="collection">
+<li (click)="selectVideo(video)" 
+[class.active]="video.id === selectedVideo?.id" 
+class="collection-item" 
+*ngFor="let video of videoList | async">
+<app-video [video]="video"></app-video>
+  {{ video.title }}
+  </ul>
+  <ng-template #error>An error!</ng-template>

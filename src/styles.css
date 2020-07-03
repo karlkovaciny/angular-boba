@@ -1,0 +1,16 @@
+/* Add application styles & imports to this file! */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css');
+
+.component-marker {
+  color: #fff;
+  height: 26px;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 0 9px;
+  border-radius: 12px;
+  background-color: #ff5252;
+  float: right;
+  transform: translate(8px, -8px);
+  grid-area: 1 / 1 / 2 / -1;
+  justify-self: end;
+}

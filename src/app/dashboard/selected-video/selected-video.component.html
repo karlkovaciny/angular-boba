@@ -1,0 +1,12 @@
+<div class="component-marker">
+    SelectedVideoComponent
+  </div>
+  <div style="clear:both">
+<p *ngIf="selectedVideo; else notLoaded">
+You selected video {{ selectedVideo?.title }}
+<!-- <img src="https://img.youtube.com/vi/{{ selectedVideo?.id }}/0.jpg"> -->
+<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg">
+</p>
+
+<ng-template #notLoaded>No video selected.</ng-template>
+  </div>
